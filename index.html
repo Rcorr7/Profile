@@ -9,23 +9,29 @@
             }
             #grid{
                 display: grid;
-                grid-template-columns: 600px 200px;
+                grid-template-columns: auto;
                 grid-template-areas: 
-                "sec2 nav"
-                "welcome-section nav"
-                "sec3 nav"
+                "navbar navbar"
+                "welcome-section welcome-section"
+                "sec2 sec2"
+                "sec3 sec3"
                 ;
 
 
             }
-            #nav{
+            #navbar{
                 background-color: lightgreen;
-                grid-area: nav;
+                grid-area: navbar;
                 place-items: center;
                 display: grid;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
                
             }
             #welcome-section{
+                margin-top: 100px;
                 background-color: lightblue;
                 grid-area: welcome-section;
                 height: 200px;
@@ -42,25 +48,48 @@
                 height: 200px;
 
             }
+
+            @media screen and(orientation:landscape) {
+                #grid{
+                display: grid;
+                grid-template-columns: 600px 200px;
+                grid-template-areas: 
+                "navbar navbar"
+                "sec3 sec3"
+                "sec2 sec2"
+                "welcome-section welcome-section"
+                ;
+
+
+            }
+                
+            }
         </style>
     </head>
     <body>
         <main id="grid">
-            <div id="nav">
+            <div id="navbar">
                 <ul>
-                    <li>NAV</li>
-                    <li>NAV</li>
-                    <li>NAV</li>
-                    <li>NAV</li>
+                    <li>
+                        <a href="#sec3">navbar</a>
+                    </li>
+                    <li>navbar</li>
+                    <li>navbar</li>
+                    <li>navbar</li>
 
                 </ul>
             </div>
             <div id="welcome-section">Welcome section
-                <h1 id="projects">Projects</h1>
-                <div class="project-title">Project Title</div>
+                <div id="projects">
+                    <h1 >Projects</h1>
+                    <a>LINK 1</a>
+                    <div class="project-tile">Project Title</div>
+                </div>
             </div>
             <div id="sec2">Section 2</div>
-            <div id="sec3">Section 3</div>
+            <div id="sec3">Section 3
+                <a id="profile-link" target="_blank" href="https://github.com/Rcorr7">LINK TO GITHUB</a>
+            </div>
 
         
         </main>
