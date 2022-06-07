@@ -9,26 +9,28 @@
             }
             #grid{
                 display: grid;
-                grid-template-columns: auto;
                 grid-template-areas: 
+                "navbar navbar"
                 "welcome-section welcome-section"
                 "sec2 sec2"
                 "sec3 sec3"
-                "navbar navbar"
                 ;
 
 
             }
             #navbar{
+                height: 8%;
                 background-color: lightgreen;
                 grid-area: navbar;
-                display: grid;
                 position: fixed;
-                width: 100%;
-                bottom: 0;
+                top:0;
+                left: 0;
+                right: 0;
+                text-align: center;
                
             }
             #welcome-section{
+                padding-top: 80px;
                 background-color: lightblue;
                 grid-area: welcome-section;
                 height: 200px;
@@ -46,7 +48,7 @@
 
             }
 
-            /* @media screen and(orientation:landscape) {
+            @media screen and(orientation:landscape) {
                 #grid{
                 display: grid;
                 grid-template-columns: 600px 200px;
@@ -60,21 +62,14 @@
 
             } 
                 
-            }*/
+            }
         </style>
     </head>
     <body>
         <main id="grid">
             <div id="navbar">
-                <ul>
-                    <li>
-                        <a href="#sec3">navbar</a>
-                    </li>
-                    <li>navbar</li>
-                    <li>navbar</li>
-                    <li>navbar</li>
-
-                </ul>
+                <a>NAV</a>
+ 
             </div>
             <div id="welcome-section">Welcome section
                 <div id="projects">
