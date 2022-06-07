@@ -4,133 +4,144 @@
         <meta charset="utf-8">
         <title>Interactive resume</title>
         <style>
-            *{
-                margin: .5%;
-            }
-            body{
-                background-image: linear-gradient(
-                    0deg,
-                    hsl(310deg 47% 45%) 0%,
-                    hsl(280deg 35% 54%) 27%,
-                    hsl(248deg 33% 64%) 37%,
-                    hsl(208deg 46% 66%) 47%,
-                    hsl(186deg 48% 67%) 64%,
-                    hsl(180deg 60% 66%) 100%
-                );
+    *{
+        margin: .5%;
+    }
+    body{
+        background-image: linear-gradient(
+            0deg,
+            hsl(310deg 47% 45%) 0%,
+            hsl(280deg 35% 54%) 27%,
+            hsl(248deg 33% 64%) 37%,
+            hsl(208deg 46% 66%) 47%,
+            hsl(186deg 48% 67%) 64%,
+            hsl(180deg 60% 66%) 100%
+        );
 
-            }
-            #grid{
-                display: grid;
-                grid-template-rows: 100px 200px 200px 200px 300px;
-                grid-template-areas: 
-                "navbar navbar"
-                "welcome-section welcome-section"
-                "sec2 sec2"
-                "sec3 sec3"
-                "sec4 sec4"
+    }
+    #grid{
+        display: grid;
+        grid-template-rows: 100px 200px 200px 200px 300px;
+        grid-template-areas: 
+        "navbar navbar"
+        "welcome-section welcome-section"
+        "sec2 sec2"
+        "sec3 sec3"
+        "sec4 sec4"
 
-                ;
+        ;
 
 
-            }
-            #navbar{
-                background-color: #AA3E98;
-                height: 8%;
-                grid-area: navbar;
-                position: fixed;
-                top:0;
-                left: 0;
-                right: 0;
-                text-align: center;
+    }
 
-               
-            }
-            /* SECTION 1 */
-            #welcome-section{
-                grid-area: welcome-section;
-            }
-            .section1h1{
-                font-size: 20px;
-                text-shadow:
-                0 0 1px #fff,
-                0 0 1px #fff,
-                0 0 1px #fff,
-                0 0 22px rgb(255, 0, 0),
-                0 0 52px rgb(255, 0, 0),
-                0 0 72px rgb(255, 0, 0),
-                0 0 80px rgb(255, 0, 0),
-                0 0 51px rgb(255, 0, 0);
+    /* NAV  */
+    #navbar{
+        background-color: #AA3E98;
+        height: 8%;
+        grid-area: navbar;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    ul li{
+        display: inline;
+        margin-left: 40px;
+        font-size: 40px;
+    }
 
-            }
-            .section1h2{
-                text-align: center;
-                font-size: 20px;
-
-            }
-            .section1h4{
-                text-align: center;
-                font-size: 15px;
-
-            }
-            /* SECTION 1 BUTTON */
-            .section1btn{
-                font-family: cool1;
-                background-color: rgba(255, 0, 0, 0.593);
-                border: none;
-                color: white;
-                padding: 1% 2%;
-                text-align: center;
-                text-decoration: none;
-                font-size: 20px;
-                transition-duration: 0.4s;
-                cursor: pointer;
-                border-radius: 40%;
     
-            }
-            .section1btn:hover {
-                background-color: #f50303;
-                color: white;
-                box-shadow: 0px 10px 40px 20px rgb(255, 0, 0);
 
-            }
-            /* SECTION 2 */
-            #sec2{
-                grid-area: sec2;
 
-            }
-            #sec3{
-                grid-area: sec3;
 
-            }
-            #sec4{
-                padding-top: 5%;
-                grid-area: sec4;
-                text-align: center;
-                /* background-image: linear-gradient(
-                185deg,
-                hsl(180deg 60% 66%) 0%,
-                hsl(183deg 53% 66%) 9%,
-                hsl(186deg 46% 66%) 19%,
-                hsl(203deg 40% 67%) 27%,
-                hsl(224deg 33% 67%) 36%,
-                hsl(242deg 31% 65%) 44%,
-                hsl(260deg 34% 60%) 53%,
-                hsl(277deg 37% 55%) 62%,
-                hsl(293deg 42% 50%) 78%,
-                hsl(310deg 47% 45%) 100%
-                ); */
 
-            }
+    /* SECTION 1 */
+    #welcome-section{
+        margin: 1%;
+        grid-area: welcome-section;
+        color: white;
+    }
+    .section1h1{
+        margin-left: 50px;
+        font-size: 20px;
+        text-shadow:
+        0 0 1px #fff,
+        0 0 1px #fff,
+        0 0 1px #fff,
+        0 0 22px rgb(206, 92, 255),
+        0 0 52px rgb(206, 92, 255),
+        0 0 72px rgb(206, 92, 255),
+        0 0 80px rgb(206, 92, 255),
+        0 0 51px rgb(206, 92, 255);
+
+    }
+    .section1h2{
+        text-align: center;
+        font-size: 20px;
+
+    }
+    .section1h4{
+        text-align: center;
+        font-size: 15px;
+
+
+    }
+    /* SECTION 1 BUTTON */
+    .section1btn{
+        font-family: cool1;
+        background-color: rgb(238, 130, 238);
+        border: none;
+        color: white;
+        padding: 1% 2%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 40%;
+
+    }
+    .section1btn:hover {
+        background-color: rgb(245, 92, 255);
+        color: white;
+        box-shadow: 0px 10px 40px 20px rgb(206, 92, 255);
+
+    }
+    /* SECTION 2 */
+    #sec2{
+        grid-area: sec2;
+
+    }
+    #sec3{
+        grid-area: sec3;
+
+    }
+    #sec4{
+        padding-top: 5%;
+        grid-area: sec4;
+        text-align: center;
+    }
     
 
         </style>
     </head>
     <body>
         <main id="grid">
-            <div id="navbar">
-                <a>NAV</a>
+            <nav id="navbar" class="nav">
+                <ul class="nav-list">
+                    <li>
+                        <a>Work</a>
+                    </li>
+                    <li>
+                        <a>Work</a>
+                    </li>
+                    <li>
+                        <a>Work</a>
+                    </li>
+                </ul>
  
-            </div>
+            </nav>
             <div id="welcome-section">
                 <div class="section1">
                     <div class="section1h1">
