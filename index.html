@@ -7,9 +7,22 @@
             *{
                 margin: 1%;
             }
+            body{
+                /* background-color: #9297C4; */
+                background-image: linear-gradient(
+                0deg,
+                hsl(180deg 60% 66%) 0%,
+                hsl(186deg 48% 67%) 27%,
+                hsl(208deg 46% 66%) 37%,
+                hsl(248deg 33% 64%) 47%,
+                hsl(280deg 35% 54%) 64%,
+                hsl(310deg 47% 45%) 100%
+                );
+
+            }
             #grid{
                 display: grid;
-                grid-template-rows: 100px 200px 200px 200px 200px;
+                grid-template-rows: 100px 200px 200px 200px 300px;
                 grid-template-areas: 
                 "navbar navbar"
                 "welcome-section welcome-section"
@@ -22,22 +35,23 @@
 
             }
             #navbar{
+                background-color: #75DDDD;
                 height: 8%;
-                background-color: lightgreen;
                 grid-area: navbar;
                 position: fixed;
                 top:0;
                 left: 0;
                 right: 0;
                 text-align: center;
+
                
             }
             #welcome-section{
-                background-color: lightblue;
+                background-color: #84C7D0;
                 grid-area: welcome-section;
             }
             #sec2{
-                background-color: lightpink;
+                background-color: #9368B7;
                 grid-area: sec2;
 
             }
@@ -47,11 +61,25 @@
 
             }
             #sec4{
-                background-color: rgb(200, 252, 188);
+                padding-top: 5%;
                 grid-area: sec4;
                 text-align: center;
+                background-image: linear-gradient(
+  185deg,
+  hsl(180deg 60% 66%) 0%,
+  hsl(183deg 53% 66%) 9%,
+  hsl(186deg 46% 66%) 19%,
+  hsl(203deg 40% 67%) 27%,
+  hsl(224deg 33% 67%) 36%,
+  hsl(242deg 31% 65%) 44%,
+  hsl(260deg 34% 60%) 53%,
+  hsl(277deg 37% 55%) 62%,
+  hsl(293deg 42% 50%) 78%,
+  hsl(310deg 47% 45%) 100%
+);
 
             }
+    
 
         </style>
     </head>
@@ -80,6 +108,15 @@
                 <h3>LETS WORK TOGETHER</h3>
                 <p>"Alone we can do so little; together we can do so much." – Helen Keller</p>
                 <div id="contact-links">
+                    <a href="http://github.com/Rcorr7">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/raul-correa-42b0b4173/">
+                        LinkedIn
+                    </a>
+                    <a href="mailto">
+                        Send a Email
+                    </a>
 
                 </div>
                 
