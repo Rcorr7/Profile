@@ -9,11 +9,14 @@
             }
             #grid{
                 display: grid;
+                grid-template-rows: 100px 200px 200px 200px 200px;
                 grid-template-areas: 
                 "navbar navbar"
                 "welcome-section welcome-section"
                 "sec2 sec2"
                 "sec3 sec3"
+                "sec4 sec4"
+
                 ;
 
 
@@ -30,39 +33,25 @@
                
             }
             #welcome-section{
-                padding-top: 80px;
                 background-color: lightblue;
                 grid-area: welcome-section;
-                height: 200px;
             }
             #sec2{
                 background-color: lightpink;
                 grid-area: sec2;
-                height: 200px;
 
             }
             #sec3{
                 background-color: rgb(237, 249, 131);
                 grid-area: sec3;
-                height: 200px;
+
+            }
+            #sec4{
+                background-color: rgb(200, 252, 188);
+                grid-area: sec4;
 
             }
 
-            @media screen and(orientation:landscape) {
-                #grid{
-                display: grid;
-                grid-template-columns: 600px 200px;
-                grid-template-areas: 
-                "navbar navbar"
-                "sec3 sec3"
-                "sec2 sec2"
-                "welcome-section welcome-section"
-                ;
-
-
-            } 
-                
-            }
         </style>
     </head>
     <body>
@@ -78,9 +67,14 @@
                     <div class="project-tile">Project Title</div>
                 </div>
             </div>
-            <div id="sec2">Section 2</div>
+            <div id="sec2">Section 2
+
+            </div>
             <div id="sec3">Section 3
                 <a id="profile-link" target="_blank" href="https://github.com/Rcorr7">LINK TO GITHUB</a>
+            </div>
+            <div id="sec4">Section 4
+                
             </div>
 
         
