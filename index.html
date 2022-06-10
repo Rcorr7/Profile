@@ -21,7 +21,7 @@
     }
     #grid{
         display: grid;
-        grid-template-rows: 100px 300px 200px 200px 300px;
+        grid-template-rows: 100px 250px 200px 200px 300px;
         grid-template-areas: 
         "navbar navbar"
         "welcome-section welcome-section"
@@ -53,10 +53,6 @@
     }
 
     
-
-
-
-
     /* SECTION 1 */
     #welcome-section{
         margin: 1%;
@@ -114,6 +110,31 @@
         grid-area: area2;
 
     }
+    .section2, h2{
+        color: white;
+        text-align: center;
+    }
+
+    /* SECTION 2 GRID */
+    #project-grid{
+        display: grid;
+        grid-template-areas: 
+        "pg-area2 pg-area1"
+        ;
+    }
+
+    #pg-area1{
+        background-color: red;
+        grid-area: pg-area1;
+    }
+    #pg-area2{
+        background-color: blue;
+        grid-area: pg-area2;
+
+    }
+
+
+
 
     /* SECTION 3 */
     #area3{
@@ -129,7 +150,21 @@
 
 
     @media only screen and (max-width: 600px) {
-        *{
+    #grid{
+    display: grid;
+    grid-template-rows: 100px 300px 200px 200px 300px;
+    grid-template-areas: 
+    "navbar navbar"
+    "welcome-section welcome-section"
+    "area2 area2"
+    "area3 area3"
+    "area4 area4"
+
+    ;
+
+
+    }
+    *{
         margin: 0.1%;
     }
             /* NAV  */
@@ -243,8 +278,16 @@
                 </div>
             </div>
             <div id="area2">
-                <h2>These are some of my projects</h2>
-                <div class="img-container">
+                <div id="section2">
+                    <h2>These are some of my projects</h2>
+
+                    <!-- PROJECT DISPLAY GRID -->
+                    <div id="project-grid">
+                        <div id="pg-area1">AREA 1</div>
+                        <div id="pg-area2">AREA 2</div>
+
+
+                    </div>
 
                 </div>
 
