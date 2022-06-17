@@ -100,7 +100,7 @@
    @media only screen and (max-width: 600px) {
     #grid{
     display: grid;
-    grid-template-rows: 100px 400px 200px 200px ;
+    grid-template-rows: 100px 400px 400px 400px ;
     grid-template-areas: 
     "navbar navbar"
     "welcome-section welcome-section"
@@ -189,6 +189,15 @@
 
     }
 
+    /* SECTION 2 GRID */
+    #project-grid{
+        display: grid;
+        grid-template-areas: 
+        "pg-area2"
+        "pg-area1"
+        ;
+}
+
 
 
 
@@ -218,7 +227,7 @@
 
     #grid{
         display: grid;
-        grid-template-rows: 100px 400px 200px 200px ;
+        grid-template-rows: 100px 400px 500px 200px ;
         grid-template-areas: 
         "navbar navbar"
         "welcome-section welcome-section"
