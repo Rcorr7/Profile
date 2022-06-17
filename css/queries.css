@@ -1,5 +1,6 @@
 /* -----------Media Query ----------- */
-@media screen and (min-width : 724px){ 
+@media screen and (min-width : 724px)
+              and (max-width : 1024px){ 
 
     /* SECTION 1 */
     #welcome-section{
@@ -23,13 +24,13 @@
    }
    .section1h2{
        text-align: center;
-       font-size: 20px;
+       font-size: 50px;
        color: green;
 
    }
    .section1h4{
        text-align: center;
-       font-size: 15px;
+       font-size: 45px;
        color: green;
 
 
