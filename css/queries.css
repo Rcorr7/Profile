@@ -1,19 +1,17 @@
 
 
-
 /* -----------Media Query ----------- */
 @media screen and (min-width : 724px)
               and (max-width : 1024px){ 
 
     #grid{
         display: grid;
-        grid-template-rows: 100px 450px 400px 200px 300px;
+        grid-template-rows: 100px 450px 400px  ;
         grid-template-areas: 
         "navbar navbar"
         "welcome-section welcome-section"
         "area2 area2"
         "area3 area3"
-        "area4 area4"
 
         ;
 
@@ -28,7 +26,7 @@
    }
    .section1h1{
        margin-left: 50px;
-       font-size: 20px;
+       font-size: 45px;
        text-shadow:
        0 0 1px #fff,
        0 0 1px #fff,
@@ -42,27 +40,26 @@
    }
    .section1h2{
        text-align: center;
-       font-size: 30px;
+       font-size: 40px;
        color: green;
 
    }
    .section1h4{
        text-align: center;
-       font-size: 25px;
+       font-size: 35px;
        color: green;
 
 
    }
    /* SECTION 1 BUTTON */
    .section1btn{
-       font-family: cool1;
        background-color: rgb(238, 130, 238);
        border: none;
        color: white;
        padding: 1% 2%;
        text-align: center;
        text-decoration: none;
-       font-size: 20px;
+       font-size: 30px;
        transition-duration: 0.4s;
        cursor: pointer;
        border-radius: 40%;
@@ -74,6 +71,25 @@
        box-shadow: 0px 10px 40px 20px rgb(206, 92, 255);
 
    }
+
+
+
+      /* SECTION 3 */
+      #area3{
+        padding-top: 1%;
+        grid-area: area3;
+        text-align: center;
+        font-family: 'Courgette';
+        color: white;
+    }
+
+    #area3h{
+        font-size: 45px;
+
+    }
+    #area3p{
+        font-size: 35px;
+    }
    
    
    }
@@ -84,13 +100,12 @@
    @media only screen and (max-width: 600px) {
     #grid{
     display: grid;
-    grid-template-rows: 110px 500px 200px 200px 300px;
+    grid-template-rows: 100px 400px 200px 200px ;
     grid-template-areas: 
     "navbar navbar"
     "welcome-section welcome-section"
     "area2 area2"
     "area3 area3"
-    "area4 area4"
 
     ;
 
@@ -111,10 +126,9 @@
         text-align: center;
     }
     .nav ul li{
-        color: red;
+        color: white;
         display: inline-block;
         text-align: center;
-        margin-left: 5px;
         font-size: 35px;
     }
     /* SECTION 1 */
@@ -123,11 +137,12 @@
     margin: 1%;
     grid-area: welcome-section;
     color: white;
+    font-size: 20px;
     }
     .section1h1{
-        margin-top: 10px;
-        margin-left: 35px;
-        font-size: 25px;
+        margin-top: 5px;
+        margin-left: 3px;
+        font-size: 30px;
         text-shadow:
         0 0 1px #fff,
         0 0 1px #fff,
@@ -142,12 +157,12 @@
     .section1h2{
         margin-top: 20px;
         text-align: center;
-        font-size: 30px;
+        font-size:25px;
 
     }
     .section1h4{
         text-align: center;
-        font-size: 35px;
+        font-size: 25px;
         color: red;
 
 
@@ -155,14 +170,13 @@
     /* SECTION 1 BUTTON */
     .section1btn{
         margin-top: 45px;
-        font-family: cool1;
         background-color: rgb(238, 130, 238);
         border: none;
         color: white;
         padding: 1% 2%;
         text-align: center;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 30px;
         transition-duration: 0.4s;
         cursor: pointer;
         border-radius: 40%;
@@ -174,5 +188,141 @@
         box-shadow: 0px 10px 40px 20px rgb(206, 92, 255);
 
     }
+
+
+
+
+    /* SECTION 3 */
+    #area3{
+        padding-top: 1%;
+        grid-area: area3;
+        text-align: center;
+        font-family: 'Courgette';
+        color: white;
+    }
+
+    #area3h{
+        font-size: 35px;
+
+    }
+    #area3p{
+        font-size: 25px;
+    }
     
+    }
+
+    /* EXTRA SMALL PHONE */
+
+    @media only screen and (min-width: 200px)
+                       and (max-width: 400px){
+
+    #grid{
+        display: grid;
+        grid-template-rows: 100px 400px 200px 200px ;
+        grid-template-areas: 
+        "navbar navbar"
+        "welcome-section welcome-section"
+        "area2 area2"
+        "area3 area3"
+
+        ;
+
+
+        }
+        *{
+            margin: 0.1%;
+        }
+                /* NAV  */
+        #navbar{
+            background-color: #AA3E98;
+            height: 9%;
+            grid-area: navbar;
+            position: fixed;
+            top:0;
+            left: 0;
+            right: 0;
+        }
+        .nav ul li{
+            color: white;
+            display: inline-block;
+            font-size: 25px;
+        }
+        /* SECTION 1 */
+        #welcome-section{
+        padding: 2%;
+        margin: 1%;
+        grid-area: welcome-section;
+        color: white;
+        font-size: 20px;
+        }
+        .section1h1{
+            margin-top: 5px;
+            margin-left: 3px;
+            font-size: 25px;
+            text-shadow:
+            0 0 1px #fff,
+            0 0 1px #fff,
+            0 0 1px #fff,
+            0 0 22px rgb(206, 92, 255),
+            0 0 52px rgb(206, 92, 255),
+            0 0 72px rgb(206, 92, 255),
+            0 0 80px rgb(206, 92, 255),
+            0 0 51px rgb(206, 92, 255);
+
+        }
+        .section1h2{
+            margin-top: 20px;
+            text-align: center;
+            font-size:25px;
+
+        }
+        .section1h4{
+            text-align: center;
+            font-size: 25px;
+            color: yellow;
+
+
+        }
+        /* SECTION 1 BUTTON */
+        .section1btn{
+            margin-top: 45px;
+            background-color: rgb(238, 130, 238);
+            border: none;
+            color: white;
+            padding: 1% 2%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 40%;
+
+        }
+        .section1btn:hover {
+            background-color: rgb(245, 92, 255);
+            color: white;
+            box-shadow: 0px 10px 40px 20px rgb(206, 92, 255);
+
+        }
+
+
+
+
+        /* SECTION 3 */
+        #area3{
+            padding-top: 1%;
+            grid-area: area3;
+            text-align: center;
+            font-family: 'Courgette';
+            color: white;
+        }
+
+        #area3h{
+            font-size: 35px;
+
+        }
+        #area3p{
+            font-size: 25px;
+        }
+
     }

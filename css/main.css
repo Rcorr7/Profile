@@ -1,3 +1,10 @@
+/* FONT SECTION */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&display=swap');
+/* FONT NAME: 'Pacifico' && 'Courgette'; */ 
+
+
+
 *{
     margin: .5%;
 }
@@ -15,13 +22,12 @@ body{
 }
 #grid{
     display: grid;
-    grid-template-rows: 100px 250px 200px 200px 300px;
+    grid-template-rows: 100px 250px 200px 200px;
     grid-template-areas: 
     "navbar navbar"
     "welcome-section welcome-section"
     "area2 area2"
     "area3 area3"
-    "area4 area4"
 
     ;
 
@@ -37,9 +43,9 @@ body{
     top:0;
     left: 0;
     right: 0;
-    text-align: center;
 }
 .nav ul li{
+    font-family: 'Courgette';
     color: white;
     display: inline-block;
     margin-left: 10px;
@@ -54,6 +60,7 @@ body{
     color: white;
 }
 .section1h1{
+    font-family: 'Pacifico';
     margin-left: 50px;
     font-size: 20px;
     text-shadow:
@@ -70,17 +77,19 @@ body{
 .section1h2{
     text-align: center;
     font-size: 20px;
+    font-family: 'Courgette';
 
 }
 .section1h4{
     text-align: center;
     font-size: 15px;
+    font-family: 'Courgette';
+
 
 
 }
 /* SECTION 1 BUTTON */
 .section1btn{
-    font-family: cool1;
     background-color: rgb(238, 130, 238);
     border: none;
     color: white;
@@ -91,6 +100,7 @@ body{
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 40%;
+    font-family: 'Courgette';
 
 }
 .section1btn:hover {
@@ -107,6 +117,7 @@ body{
 .section2, h2{
     color: white;
     text-align: center;
+    font-family: 'Courgette';
 }
 
 /* SECTION 2 GRID */
@@ -130,14 +141,13 @@ body{
 
 
 /* SECTION 3 */
-#area3{
-    grid-area: area3;
 
-}
-#area4{
+#area3{
     padding-top: 5%;
-    grid-area: area4;
+    grid-area: area3;
     text-align: center;
+    font-family: 'Courgette';
+    color: white;
 }
 
 
