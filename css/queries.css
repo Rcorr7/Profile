@@ -6,7 +6,7 @@
 
     #grid{
         display: grid;
-        grid-template-rows: 100px 450px 400px  ;
+        grid-template-rows: 100px 450px 700px  ;
         grid-template-areas: 
         "navbar navbar"
         "welcome-section welcome-section"
@@ -100,7 +100,7 @@
    @media only screen and (max-width: 600px) {
     #grid{
     display: grid;
-    grid-template-rows: 100px 400px 400px 400px ;
+    grid-template-rows: 100px 400px 1050px 400px ;
     grid-template-areas: 
     "navbar navbar"
     "welcome-section welcome-section"
@@ -227,7 +227,7 @@
 
     #grid{
         display: grid;
-        grid-template-rows: 100px 400px 500px 200px ;
+        grid-template-rows: 100px 400px 980px 200px ;
         grid-template-areas: 
         "navbar navbar"
         "welcome-section welcome-section"

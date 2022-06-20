@@ -22,7 +22,7 @@ body{
 }
 #grid{
     display: grid;
-    grid-template-rows: 100px 250px 200px 200px;
+    grid-template-rows: 100px 250px 750px 200px;
     grid-template-areas: 
     "navbar navbar"
     "welcome-section welcome-section"
@@ -124,7 +124,9 @@ body{
 #project-grid{
     display: grid;
     grid-template-areas: 
-    "pg-area2 pg-area1"
+    "pg-area1 pg-area2"
+    "pg-area3 pg-area4"
+
     ;
 }
 
@@ -135,6 +137,16 @@ body{
 #pg-area2{
     background-color: blue;
     grid-area: pg-area2;
+
+}
+#pg-area3{
+    background-color: rgb(34, 255, 0);
+    grid-area: pg-area3;
+
+}
+#pg-area4{
+    background-color: rgb(255, 255, 0);
+    grid-area: pg-area4;
 
 }
 
