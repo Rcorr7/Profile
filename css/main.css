@@ -123,6 +123,7 @@ body{
 /* SECTION 2 GRID */
 #project-grid{
     display: grid;
+    place-items: center;
     grid-template-areas: 
     "pg-area1 pg-area2"
     "pg-area3 pg-area4"
@@ -131,21 +132,17 @@ body{
 }
 
 #pg-area1{
-    background-color: red;
     grid-area: pg-area1;
 }
 #pg-area2{
-    background-color: blue;
     grid-area: pg-area2;
 
 }
 #pg-area3{
-    background-color: rgb(34, 255, 0);
     grid-area: pg-area3;
 
 }
 #pg-area4{
-    background-color: rgb(255, 255, 0);
     grid-area: pg-area4;
 
 }
